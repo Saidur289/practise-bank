@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Project</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="login-area" >
+        <h1 class="text-center font-bold text-black text-2xl">Welcome To Pioneer Bank</h1>
+        <div class="submit-area space-y-3 class="w-full"" id="area" >
+            <h2>Login</h2>
+            <input type="text" class="px-5 py-3 bg-slate-200 rounded-lg mb-2 w-full lg:w-full text-black font-bold" placeholder="Email">
+            <br>
+            <input type="password" name="" id="" class="px-5 py-3 bg-slate-200 rounded-lg w-full lg:w-full text-black font-bold" placeholder="password">
+            <br>
+            <button class="px-4 py-2 bg-lime-500" id="login">Enter</button>
+        </div>
+       </div>
+       <div id="transaction-area">
+        <h3 class="text-center text-2xl font-bold text-black mb-12">Transaction Area</h3>
+        <div class="grid grid-cols-1 lg:grid-cols-12 md:grid-cols-2 gap-6">
+            <div class=" md:col-span-4 lg:grid lg:col-span-4">
+                <div class="diposit bg-slate-400 status">
+                    <h5>Diposit</h5>
+                <h2> $ <span  id="currentDeposit">00</span</h2>
+                </div>
+            </div>
+            <div class="md:grid md:col-span-4 lg:grid lg:col-span-4">
+                <div class="withdraw bg-green-400 status">
+                    <h5>Withdraw</h5>
+                <h2>$ <span id="currentWithdraw">00</span></h2>
+                </div>
+            </div>
+            <div class="md:grid md:col-span-4 lg:grid lg:col-span-4">
+                <div class="balance bg-orange-400 status">
+                    <h5>Balance</h5>
+                <h2>$<span id="currentBalance">1240</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1  lg:grid-cols-2">
+            <div class=" submit-area space-y-4">
+            
+                <h4>Deposit</h4>
+            <input type="text" id="depositAmmount"  placeholder="$ amount you want to deposit"  class="px-5 py-3 bg-slate-200 rounded-lg w-full lg:w-full text-black font-bold">
+            <br>
+            <button class="px-4 py-2 bg-lime-500" id="addDeposit">Deposit</button>
+            
+            </div>
+            <div class="submit-area space-y-4">  
+              <h4>Withdraw</h4>
+            <input type="text" placeholder="$ amount you want to withdraw" id="withdrawAmount"  class="px-5 py-3 bg-slate-200 rounded-lg w-full lg:w-full text-black font-bold">
+            <br>
+            <button class="px-4 py-2 bg-lime-500" id="addWithdraw">Withdraw</button>
+            </div>
+    
+        </div>
+       </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
